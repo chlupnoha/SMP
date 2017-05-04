@@ -1,0 +1,105 @@
+{* This is the welcome page, you can delete it *}
+
+{block content}
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+
+		<h2>Finished tournament</h2>
+
+		<br>
+
+		{if $id == 1}
+			<div class="demo"><div class="jQBracket lr" style="width: 570px;"><div class="finals"><div class="round" style="width: 100px; margin-right: 40px"><div class="match" style="height: 195px;"><div class="teamContainer" style="top: 68.75px;"><div class="team lose highlightLoser" style="width: 100px;" data-teamid="3"><div class="label" style="width: 70px;">Team 4</div><div class="score" style="width: 30px;" data-resultid="result-11">1</div></div><div class="team win highlightWinner" style="width: 100px;" data-teamid="1"><div class="label" style="width: 70px;">Team 2</div><div class="score" style="width: 30px;" data-resultid="result-12">12</div></div><div class="connector highlightWinner" style="height: 0px; width: 20px; right: -22px; top: 21.5px; border-bottom: none;"><div class="connector highlightWinner" style="width: 20px; right: -20px; bottom: 0px;"></div></div></div></div></div><div class="round" style="width: 100px; margin-right: 40px"><div class="match" style="height: 195px;"><div class="teamContainer" style="top: 68.75px;"><div class="team lose highlightLoser" style="width: 100px;" data-teamid="3"><div class="label" style="width: 70px;">Team 4</div><div class="score" style="width: 30px;" data-resultid="result-13">15</div><div class="bubble">2nd</div></div><div class="team win highlightWinner" style="width: 100px;" data-teamid="1"><div class="label" style="width: 70px;">Team 2</div><div class="score" style="width: 30px;" data-resultid="result-14">16</div><div class="bubble">1st</div></div></div></div></div></div><div class="bracket" style="height: 130px;"><div class="round" style="width: 100px; margin-right: 40px"><div class="match" style="height: 65px;"><div class="teamContainer" style="top: 10px;"><div class="team lose" style="width: 100px;" data-teamid="0"><div class="label" style="width: 70px;">Team 1</div><div class="score" style="width: 30px;" data-resultid="result-1">1</div></div><div class="team win highlightWinner" style="width: 100px;" data-teamid="1"><div class="label" style="width: 70px;">Team 2</div><div class="score" style="width: 30px;" data-resultid="result-2">2</div></div><div class="connector highlightWinner" style="height: 10px; width: 20px; right: -22px; top: 32.75px; border-bottom: none;"><div class="connector highlightWinner" style="width: 20px; right: -20px; bottom: 0px;"></div></div></div></div><div class="match" style="height: 65px;"><div class="teamContainer" style="top: 10px;"><div class="team lose" style="width: 100px;" data-teamid="2"><div class="label" style="width: 70px;">Team 3</div><div class="score" style="width: 30px;" data-resultid="result-3">3</div></div><div class="team win highlightLoser" style="width: 100px;" data-teamid="3"><div class="label" style="width: 70px;">Team 4</div><div class="score" style="width: 30px;" data-resultid="result-4">4</div></div><div class="connector highlightLoser" style="height: 32.5px; width: 20px; right: -22px; bottom: 10.25px; border-top: none;"><div class="connector highlightLoser" style="width: 20px; right: -20px; top: 0px;"></div></div></div></div></div><div class="round" style="width: 100px; margin-right: 40px"><div class="match" style="height: 130px;"><div class="teamContainer" style="top: 42.5px;"><div class="team lose highlightWinner" style="width: 100px;" data-teamid="1"><div class="label" style="width: 70px;">Team 2</div><div class="score" style="width: 30px;" data-resultid="result-5">5</div></div><div class="team win highlightLoser" style="width: 100px;" data-teamid="3"><div class="label" style="width: 70px;">Team 4</div><div class="score" style="width: 30px;" data-resultid="result-6">6</div></div><div class="connector highlightLoser" style="height: 3.75px; width: 20px; right: -22px; top: 32.75px; border-bottom: none;"><div class="connector highlightLoser" style="width: 20px; right: -20px; bottom: 0px;"></div></div></div></div></div></div><div class="loserBracket" style="height: 65px;"><div class="round" style="width: 100px; margin-right: 40px"><div class="match" style="height: 65px;"><div class="teamContainer" style="top: 10px;"><div class="team lose" style="width: 100px;" data-teamid="0"><div class="label" style="width: 70px;">Team 1</div><div class="score" style="width: 30px;" data-resultid="result-7">7</div></div><div class="team win" style="width: 100px;" data-teamid="2"><div class="label" style="width: 70px;">Team 3</div><div class="score" style="width: 30px;" data-resultid="result-8">8</div></div><div class="connector" style="height: 22.5px; width: 20px; right: -22px; top: 10.25px; border-top: none;"><div class="connector" style="width: 20px; right: -20px; top: 0px;"></div></div></div></div></div><div class="round" style="width: 100px; margin-right: 40px"><div class="match" style="height: 65px;"><div class="teamContainer" style="top: 10px;"><div class="team lose" style="width: 100px;" data-teamid="2"><div class="label" style="width: 70px;">Team 3</div><div class="score" style="width: 30px;" data-resultid="result-9">9</div></div><div class="team win highlightWinner" style="width: 100px;" data-teamid="1"><div class="label" style="width: 70px;">Team 2</div><div class="score" style="width: 30px;" data-resultid="result-10">10</div></div><div class="connector highlightWinner" style="height: 71.25px; width: 20px; right: -22px; bottom: 10.25px; border-top: none;"><div class="connector highlightWinner" style="width: 20px; right: -20px; top: 0px;"></div></div></div></div></div></div></div></div>
+        {elseif $id == 2}
+
+			<button type="button" class="btn btn-info btn-lg">Register</button>
+			<button type="button" class="btn btn-info btn-lg">Check-in</button>
+			<button type="button" class="btn btn-info btn-lg" data-toggle="bans">Bans</button>
+
+			<h3>Users</h3>
+
+			<table class="table table-gx">
+				<thead>
+				<tr>
+					<th>Name</th>
+					<th>Status</th>
+					<th></th>
+					<th class="text-right">Action</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						<span class="flag-icon flag-icon-kr"></span>                    <a href="/player/detail/16664">
+							Vinnie                    </a>
+					</td>
+					<td>
+						<span class="green"><i class="fa fa-check" aria-hidden="true"></i> Checked in</span>
+					</td>
+					<td>
+						<span class="yellow"><i class="fa fa-check" aria-hidden="true"></i> In tournament</span>
+					</td>
+					<td class="text-right">
+						<a href="/player/detail/16664" type="button" class="btn btn-gx"><i class="fa fa-eye"></i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="flag-icon flag-icon-kr"></span>
+							Vinnie
+					</td>
+					<td>
+						<span class="green"><i class="fa fa-check" aria-hidden="true"></i> Checked in</span>
+					</td>
+					<td>
+						<span class="yellow"><i class="fa fa-check" aria-hidden="true"></i> In tournament</span>
+					</td>
+					<td class="text-right">
+						<a href="/player/detail/16664" type="button" class="btn btn-gx"><i class="fa fa-eye"></i></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="flag-icon flag-icon-kr"></span>
+							Vinnie
+					</td>
+					<td>
+						<span class="green"><i class="fa fa-check" aria-hidden="true"></i> Checked in</span>
+					</td>
+					<td>
+						<span class="yellow"><i class="fa fa-check" aria-hidden="true"></i> In tournament</span>
+					</td>
+					<td class="text-right">
+						<a href="/player/detail/16664" type="button" class="btn btn-gx"><i class="fa fa-eye"></i></a>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+
+		{/if}
+
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Bans</h4>
+					</div>
+					<div class="modal-body">
+						<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+

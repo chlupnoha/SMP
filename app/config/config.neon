@@ -1,0 +1,21 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+services:
+	router: App\RouterFactory::createRouter
+	formFactory: App\Forms\FormFactory
+	registerForm: App\Forms\RegistrationFormFactory
+	loginForm: App\Forms\SignFormFactory
+	userForm: App\Forms\UserFormFactory
+	watchForm: App\Forms\TournamentFormFactory
+	tournamentForm: App\Forms\WatchFormFactory
