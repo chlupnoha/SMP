@@ -5,7 +5,7 @@
 <div class="container">
 	<div class="row">
 
-		<h2>Finished tournament</h2>
+		<h2>{$tournament['name']}</h2>
 
 		<br>
 
@@ -29,51 +29,23 @@
 				</tr>
 				</thead>
 				<tbody>
-				<tr>
-					<td>
-						<span class="flag-icon flag-icon-kr"></span>                    <a href="/player/detail/16664">
-							Vinnie                    </a>
-					</td>
-					<td>
-						<span class="green"><i class="fa fa-check" aria-hidden="true"></i> Checked in</span>
-					</td>
-					<td>
-						<span class="yellow"><i class="fa fa-check" aria-hidden="true"></i> In tournament</span>
-					</td>
-					<td class="text-right">
-						<a href="/player/detail/16664" type="button" class="btn btn-gx"><i class="fa fa-eye"></i></a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<span class="flag-icon flag-icon-kr"></span>
-							Vinnie
-					</td>
-					<td>
-						<span class="green"><i class="fa fa-check" aria-hidden="true"></i> Checked in</span>
-					</td>
-					<td>
-						<span class="yellow"><i class="fa fa-check" aria-hidden="true"></i> In tournament</span>
-					</td>
-					<td class="text-right">
-						<a href="/player/detail/16664" type="button" class="btn btn-gx"><i class="fa fa-eye"></i></a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<span class="flag-icon flag-icon-kr"></span>
-							Vinnie
-					</td>
-					<td>
-						<span class="green"><i class="fa fa-check" aria-hidden="true"></i> Checked in</span>
-					</td>
-					<td>
-						<span class="yellow"><i class="fa fa-check" aria-hidden="true"></i> In tournament</span>
-					</td>
-					<td class="text-right">
-						<a href="/player/detail/16664" type="button" class="btn btn-gx"><i class="fa fa-eye"></i></a>
-					</td>
-				</tr>
+				{foreach $users as $u}
+					<tr>
+						<td>
+							<span class="flag-icon flag-icon-kr"></span>                    <a href="/player/detail/16664">
+								{$u['name']}                    </a>
+						</td>
+						<td>
+							<span class="green"><i class="fa fa-check" aria-hidden="true"></i> {$u['check']}</span>
+						</td>
+						<td>
+							<span class="yellow"><i class="fa fa-check" aria-hidden="true"></i> {$u['in']}</span>
+						</td>
+						<td class="text-right">
+							<a href="/player/detail/16664" type="button" class="btn btn-gx"><i class="fa fa-eye"></i></a>
+						</td>
+					</tr>
+				{/foreach}
 				</tbody>
 			</table>
 

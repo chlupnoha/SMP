@@ -87,6 +87,36 @@
 				</td>
 			</tr>
 
+			{foreach $tournaments as $t}
+				<tr class="live" data-row="tournament">
+					<td>
+						<div class="media">
+							<a n:href="Tournament:detail, 'id' => 1" style="text-decoration: none;">
+								<div class="media-left media-middle">
+									<img src="https://s3.eu-central-1.amazonaws.com/esga-cdn-frankfurt/website/img/games/logo-32x32-1.png" title="" data-toggle="tooltip" data-placement="top" data-original-title="Hearthstone">
+								</div>
+								<div class="media-body">
+											<span class="live blink">
+												  </span>
+									{$t['name']}                                   &nbsp;&nbsp;<img src="https://s3.eu-central-1.amazonaws.com/esga-cdn-frankfurt/website/img/games/logo-32x32-1-hcpoints2.png" title="" data-toggle="tooltip" data-placement="top" data-original-title="Hearthstone Championship Tour">
+								</div>
+							</a>
+						</div>
+					</td>
+					<td>
+						EU    </td>
+					<td>
+			<span>
+				1v1        </span>
+					</td>
+					<td>
+						<strong class="yellow industrybold">218</strong>/128            </td>
+					<td class="text-right">
+						<span data-datetime-format="calendar" data-datetime="2017-05-03T16:00:00+00:00">{$t['start']}</span>
+					</td>
+				</tr>
+			{/foreach}
+
 			</tbody>
 		</table>
 	</div>

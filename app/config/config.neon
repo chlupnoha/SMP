@@ -19,3 +19,6 @@ services:
 	userForm: App\Forms\UserFormFactory
 	watchForm: App\Forms\TournamentFormFactory
 	tournamentForm: App\Forms\WatchFormFactory
+
+	tournamentRepository: App\Model\TournamentRepository
+	userRepository: App\Model\UserRepository
